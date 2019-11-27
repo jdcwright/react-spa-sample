@@ -8,14 +8,11 @@ import { rootReducer } from '../redux/root/reducers';
 import history from './history';
 
 const sagaMiddleware = createSagaMiddleware();
-
-sagaMiddleware.run(rootSaga);
-
 const composeEnhancers = composeWithDevTools({
     // Specify here name, actionsBlacklist, actionsCreators and other options
 });
 
-export default createStore(
+const store =  createStore(
     rootReducer(history),
     composeEnhancers(
         applyMiddleware(
@@ -24,3 +21,6 @@ export default createStore(
         )
     )
 );
+
+sagaMiddleware.run(rootSaga);
+export default store;
