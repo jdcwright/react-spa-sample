@@ -1,0 +1,19 @@
+{
+    "extends": "tslint-config-airbnb",
+    "rules": {
+        "import-name": false,
+        "ter-indent": [
+            8,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "trailing-comma": false,
+        "brace-style": "stroustrup",
+        "max-line-length": [
+            true,
+            200
+        ],
+        "ter-arrow-parens": false
+    }
+}
