@@ -17,7 +17,7 @@ export const testReducer = (state: ITestState = initialState, { type, payload }:
         case getType(Actions.setTest): {
             return {
                 ...state,
-                a: payload
+                a: payload as Models.Test
             };
         }
         default: {
