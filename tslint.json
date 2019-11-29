@@ -1,5 +1,5 @@
 {
-    "extends": "tslint-config-airbnb",
+    "extends": ["tslint-config-airbnb", "tslint-react"],
     "rules": {
         "import-name": false,
         "ter-indent": [
@@ -14,6 +14,13 @@
             true,
             200
         ],
-        "ter-arrow-parens": false
+        "ter-arrow-parens": false,
+        "variable-name": {
+            "options": [
+                "allow-pascal-case",
+                "require-const-for-all-caps",
+                "ban-keywords"
+            ]
+        }
     }
 }

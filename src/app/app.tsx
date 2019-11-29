@@ -1,10 +1,17 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 
+import Navbar from '../components/nav/navbar';
+
 export const App: React.FunctionComponent = () => {
     return (
-        <Switch>
-            <Route path="/" component={() => <h1>BALLER</h1>} />
-        </Switch>
+        <div>
+            <Navbar />
+            <div className="main-container">
+                <Switch>
+                    <Route path="/" component={() => <h1>BALLER</h1>} />
+                </Switch>
+            </div>
+        </div>
     );
 };

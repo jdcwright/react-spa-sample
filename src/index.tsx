@@ -9,12 +9,17 @@ import { App } from './app/app';
 import history from './app/history';
 import store from './app/store';
 
-const Root = hot(module)(() =>
+const Root = hot(module)(() => (
     <Provider store={store} >
         <ConnectedRouter history={history} >
             <App />
         </ConnectedRouter>
     </Provider>
-);
+));
 
 ReactDOM.render(<Root />, document.getElementById('root'));
+
+/* TODO:
+- setup bootstrap
+- stub out a proper navbar + generic homepage
+*/
