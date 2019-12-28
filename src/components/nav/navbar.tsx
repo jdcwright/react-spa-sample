@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const NavBar = () => (
     <Navbar id="navbar" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand>
             <img
                 alt=""
                 src="/logo.svg"

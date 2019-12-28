@@ -3,6 +3,6 @@ import { getTestSaga } from '../testDuck/sagas';
 
 export function* rootSaga() {
     yield all([
-        getTestSaga
+        getTestSaga()
     ]);
 }
